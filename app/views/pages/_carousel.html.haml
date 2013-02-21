@@ -1,0 +1,35 @@
+/ Carousel
+
+/consult Bootstrap docs at
+/http://twitter.github.com/bootstrap/javascript.html#carousel
+#this-carousel-id.carousel.slide
+  .carousel-inner
+    .active.item
+      %a
+        %img{:alt => "Villa4Vactation", :src => "/assets/villa4vacation.png"}/
+      .carousel-caption
+        %p Villa4Vacation
+        / %p
+        /   %a{:href => "http://www.esoftconsult.com/work"}
+    .item
+      %a
+        %img{:alt => "World Luxury", :src => "assets/worldLuxury.png"}/
+      .carousel-caption
+        %p World Luxury
+        / %p
+        /   %a{:href => "http://www.esoftconsult.com/work"}
+    .item
+      %a
+        %img{:alt => "Svadbaminsk", :src => "assets/svadbaminsk.png"}/
+      .carousel-caption
+        %p Svadbaminsk
+        / %p
+        /   %a{:href => "http://www.esoftconsult.com/work"}
+  / .carousel-inner
+  /
+    next and previous controls here
+    href values must reference the id for this carousel
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+  %a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+/ .carousel
+/ end carousel

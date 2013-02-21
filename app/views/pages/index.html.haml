@@ -1,9 +1,18 @@
 %div.hero-unit
-  %h1 eSoftConsult
-  %p Turn your idea into reality. Outsourcing without the headache.
-  %br/
-  %p Our talented team of developers is not some rag-tag gang of hackers packed into a low-lit room in some benighted corner of the globe. Every one of them has at least a Masters degree in a technical field and comes from the top 5% of Belarus' premier tech universities
-  %p We speak Russian, German, and fluent English.
-  %p We have years of experience as software engineers and product managers yet ride the bleeding edge of technology.
-  %p We can manage your web presence, build web and iOS/android applications, do enterprise-grade back end work, and more- all for extremely competitive rates. #{link_to "more on our expertise", expertise_path}
+  %div.row-fluid
+    %div.span7
+      %h1 eSoftConsult
+      %h3  Outsourcing without the headache.
+      =mail_to "brianjoseff123@gmail.com", "Get a quote for your project", :cc => "alexbahel@gmail.com",:subject => "Free development quote", :body => "Tell us briefly about the idea and what services you think you need:", :class => "btn btn-primary btn-large"
+      %p We can manage your web presence, build web and iOS/android applications, do enterprise-grade back end work, and more- all for extremely competitive rates.
+    %div.span5
+      =render "carousel"
+  %div.row-fluid
+    %div.span7
+    %div.span5
+      %p Our talented team of developers is not some rag-tag gang of hackers packed into a low-lit room in some benighted corner of the globe. Every one of them has at least a Masters degree in a technical field and comes from the top 5% of Belarus' premier tech universities
+  / %p We speak Russian, German, and fluent English.
+  / %p We have years of experience as software engineers and product managers yet ride the bleeding edge of technology.
+  / %p We can manage your web presence, build web and iOS/android applications, do enterprise-grade back end work, and more- all for extremely competitive rates. #{link_to "more on our expertise", expertise_path}
 
+/ Turn your idea into reality.
